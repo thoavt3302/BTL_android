@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="bottomSheetDialogTheme">
+    <View
+        android:background="@drawable/view"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#393961"
+        android:text="SỬA HÓA ĐƠN"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo"
+        android:layout_marginLeft="30dp"/>
+    <EditText
+        android:id="@+id/edTenKhachHangEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Tên khách hàng"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/edNgayMuaEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Ngày mua"
+        android:gravity="center" />
+
+   <Button
+       android:textColor="#fff"
+       android:background="#393961"
+       android:fontFamily="@font/baloo"
+       android:textSize="20dp"
+       android:layout_margin="30dp"
+       android:id="@+id/btnSave"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="LƯU"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="bottomSheetDialogTheme">
+    <View
+        android:background="@drawable/view"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#393961"
+            android:text="THÊM HÓA ĐƠN CHI TIÊT"
+            android:textSize="25dp"
+            android:fontFamily="@font/baloo"
+            android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/edMaHoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Mã hóa đơn"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#393961"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sách: "/>
+        <Spinner
+            android:id="@+id/spSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edSoluongHDCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Số lượng"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:textColor="#fff"
+            android:background="#393961"
+            android:textSize="20sp"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/baloo"
+            android:id="@+id/btnAddHdct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="THÊM"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/btnthanhtoan"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="37dp"-->
+<!--            android:layout_margin="30dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#393961"-->
+<!--            android:fontFamily="@font/baloo"-->
+<!--            android:text="Thanh toán"-->
+<!--            android:textColor="#fff"-->
+<!--            android:textSize="20sp" />-->
+    </LinearLayout>
+
+
+</LinearLayout>

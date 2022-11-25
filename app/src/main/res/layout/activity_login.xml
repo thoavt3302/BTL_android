@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#ECECEC"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ECECEC"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+<!--        <ImageView-->
+<!--            android:id="@+id/ivLogin"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/book_login"/>-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ivBookLogin"
+            android:layout_width="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/book"
+            android:layout_gravity="center"
+            android:layout_height="200dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, Welcome to here!"
+            android:textSize="40sp"
+            android:fontFamily="@font/bangers"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập tại đây"
+            android:textSize="20sp"
+            android:fontFamily="@font/antic"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Tên người dùng"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edUsername"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Mật khẩu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/chkLogin"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhớ mật khẩu?"
+            />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/bg_btn_login"
+            android:text="LOGIN" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/trangchu"
+            android:icon="@drawable/ic_home"
+            android:title="Trang chủ"
+            />
+        <item
+            android:id="@+id/sach"
+            android:icon="@drawable/ic_book"
+            android:title="Quản lý sách"
+            />
+        <item
+            android:id="@+id/theLoai"
+            android:icon="@drawable/ic_bookcategory"
+            android:title="Quản lý thể loại"
+            />
+        <item
+            android:icon="@drawable/ic_person"
+            android:id="@+id/nguoidung"
+            android:title="Quản lý người dùng"
+            />
+        <item
+            android:icon="@drawable/ic_statistics"
+            android:id="@+id/thongke"
+            android:title="Thống kê"
+            />
+        <item
+            android:icon="@drawable/ic_bill"
+            android:id="@+id/hoadon"
+            android:title="Hóa đơn"
+            />
+        <item android:title="Other">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:icon="@drawable/ic_information"
+                        android:id="@+id/gioithieu"
+                        android:title="Giới thiệu"
+                        />
+                    <item
+                        android:icon="@drawable/ic_logout"
+                        android:id="@+id/thoat"
+                        android:title="Thoát"
+                        />
+
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

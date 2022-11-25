@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="bottomSheetDialogTheme">
+    <View
+        android:background="@drawable/view"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#393961"
+            android:text="THÊM SÁCH"
+            android:textSize="25dp"
+            android:fontFamily="@font/baloo"
+            android:layout_marginLeft="30dp"/>
+    <EditText
+        android:id="@+id/edTieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Tiêu đề"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edTacgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Tác giả"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edNXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Nhà xuất bản"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edGiaban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Giá bán"
+        android:inputType="number"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edSoluong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Số lượng"
+        android:inputType="number"
+        android:gravity="center" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#393961"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên loại sách: "/>
+        <Spinner
+            android:id="@+id/spTheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+   <Button
+       android:textColor="#fff"
+       android:background="#393961"
+       android:textSize="20sp"
+       android:layout_margin="30dp"
+       android:fontFamily="@font/baloo"
+       android:id="@+id/btn_add_sach"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="THÊM"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="bottomSheetDialogTheme"
+    >
+    <View
+        android:background="@drawable/view"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#393961"
+        android:text="THÊM THỂ LOẠI"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo"
+        android:layout_marginLeft="30dp"/>
+    <EditText
+        android:id="@+id/edTentheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Tên thể loại"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edMota"
+        android:fontFamily="@font/antic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Mô tả"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edVitri"
+        android:fontFamily="@font/antic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Vị trí( Kệ số )"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btn_add_phanloai"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="THÊM"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/baloo"
+        android:layout_width="match_parent"
+        android:background="#393961"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
